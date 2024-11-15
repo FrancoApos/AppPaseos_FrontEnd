@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "petApp",
+    "slug": "petApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "androidStatusBar": {
+      "translucent": true,
+      "backgroundColor": "#ffffff"
+    },
+    "androidNavigationBar": {
+      "visible": "immersive",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCvDO3dZynjmOnt3NK9ucOIno13cWRjf28"
+        }
+      },
+      "package": "com.anonymous.petApp"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps._some_id_here_"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite que esta aplicación acceda a tus fotos para elegir una imagen de perfil."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "entryPoint": "./App.tsx",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "scheme": "mycode",
+      "eas": {
+        "projectId": "ba984f33-00e6-410e-8b77-7c37a08d15d4"
+      }
+    }
+  }
+}
